@@ -18,6 +18,11 @@ class HBNBCommand(cmd.Cmd):
         """ type quit to exit console"""
         return True
 
+    def emptyline(self):
+        """
+        Returns back to the prompt
+        """
+        return
 
 
 
