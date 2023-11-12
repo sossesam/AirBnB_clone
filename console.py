@@ -5,7 +5,6 @@ the console is the interactive part of the project
 
 import cmd
 
-
 class HBNBCommand(cmd.Cmd):
     """
     the console class
@@ -24,6 +23,7 @@ class HBNBCommand(cmd.Cmd):
         """
         return
 
+    
 
 
 

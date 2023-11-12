@@ -10,8 +10,15 @@ import uuid
 from datetime import datetime
 
 class BaseModel:
+    """
+    instatiatiates a new reusable class
+
+    """
     def __init__(self, *args, **kwargs):
-        #convert the kwargs dictionary to an object
+        """
+        initialise it with an id, created_at, updated_at if object is 
+        not included as parameter
+        """
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()

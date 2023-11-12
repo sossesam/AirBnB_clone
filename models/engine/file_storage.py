@@ -21,7 +21,7 @@ class FileStorage:
         with open(type(self).__file_path, "w") as f:
             for keys, values in type(self).__objects.items():
                 new_dict[keys] = values.to_dict()
-            json.dump(new_dict, f)
+            json.dump(new_dict, f, indent = 4)
 
     def reload(self):
         try:
